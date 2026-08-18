@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css"/>
+    <style>
+        .darkTheme{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button id="btn1">Theme 1</button>
+    </header>
+
+    <section class="card">Once Upon a time</section>
+
+    <script>
+        const btn1=document.querySelector("#btn1");
+
+        btn1.addEventListener("click" , cbf);
+        function cbf(){
+            document.body.classList.toggle("darkTheme");
+            if(btn1.textContent==="Theme 1"){
+                btn1.textContent="Theme 2";
+            } else {
+                btn1.textContent="Theme 1";
+            }
+        }
+    </script>
+</body>
+</html>

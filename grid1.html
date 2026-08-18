@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Dhruv Pathak">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>GRID-1</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body{
+            min-height: 100dvh;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            background-color: white;
+        }
+
+        section{
+            padding: 10px;
+        }
+
+        .box{
+            background-color: rgb(0, 102, 255);
+            padding: 1rem;
+        }
+
+        .gc{
+            display: grid;
+            gap: 0.5rem;
+            /*specify width of columns*/
+            grid-template-columns: repeat(3,150px);
+            /*specify height of rows*/
+            grid-template-rows: repeat(3,150px);
+            /*centers the grid*/
+            place-content: center;
+        }
+
+        @media (min-width: 767px){
+        .gc{
+            /* grid-template-columns: repeat(3,200px);*/
+            grid-template-columns: 200px 200px 200px;
+            /* grid-template-rows: repeat(2,200px);*/
+            grid-template-rows: 200px 200px;
+        }
+        }
+
+        @media(min-width: 1024px){
+        .gc{
+            /* grid-template-columns: repeat(4,250px);*/
+            grid-template-columns: 250px 250px 250px 250px;
+            /* grid-template-rows: repeat(2,250px);*/
+            grid-template-rows: 250px 250px;
+        }
+
+        #m6{
+            grid-column: 2/-1;
+        }
+        }
+
+    </style>
+</head>
+<body>
+<section class="box" style="height: 10vh;">
+        <span style="font-size: 2.5rem;
+                     margin-right: 1rem;">&#9812</span>
+        Header/NavBar
+    </section>
+    <section class="box gc"
+             style="height: 80vh;
+                    background-color: white;">
+    <main class="box" id="m1">Content-1</main>
+    <main class="box" id="m2">Content-2</main>
+    <main class="box" id="m3">Content-3</main>
+    <main class="box" id="m4">Content-4</main>
+    <main class="box" id="m5">Content-5</main>
+    <main class="box" id="m6">Content-6</main>
+    </section>
+    <section class="box"
+             style="position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    height: 10vh;
+                    width: 100%;">
+            <span style="font-size: 1.5rem;
+                     margin-right: 1rem;">&#9776</span>
+        Footer
+    </section>
+</body>
+</html> 

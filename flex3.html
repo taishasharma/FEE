@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1.FOUR BOXES LAYOUT</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#222;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    text-align:center;
+    width:100%;
+    padding:40px 20px;
+}
+
+h3{
+    color:#fff;
+    margin-bottom:30px;
+}
+
+.flex-layout{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    max-width:420px;
+    margin:auto;
+}
+
+.box{
+    width:180px;
+    height:100px;
+    background:#7ec8ff;
+    border-radius:10px;
+}
+
+@media (max-width:768px){
+
+    .container{
+        padding:20px;
+    }
+
+    .flex-layout{
+        flex-direction:column;
+        align-items:center;
+        max-width:100%;
+    }
+
+    .box{
+        width:90%;
+        max-width:350px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h3>Four Boxes at Center</h3>
+
+    <div class="flex-layout">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Layout</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef2ff;
+}
+
+.container{
+    display:grid;
+    grid-template-rows:80px 1fr 70px;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    height:100vh;
+}
+
+/* Header */
+header{
+    grid-area:header;
+    background-color:rgb(45, 20, 2);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+    font-weight:bold;
+}
+
+/* Main */
+main{
+    grid-area:main;
+    background: rgba(148, 103, 37, 0.596);
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+/* Left Part */
+.left{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#1E293B;
+    font-size:35px;
+    font-weight:bold;
+    border-right:2px solid rgb(45, 20, 2);
+}
+
+/* Right Part */
+.right{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#1E293B;
+    font-size:35px;
+    font-weight:bold;
+}
+
+/* Footer */
+footer{
+    grid-area:footer;
+    background-color:rgb(45, 20, 2);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <header>Header</header>
+
+    <main>
+        <div class="left">Left Content</div>
+        <div class="right">Right Content</div>
+    </main>
+
+    <footer>Footer</footer>
+
+</div>
+
+</body>
+</html>
+
+

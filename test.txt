@@ -1,0 +1,27 @@
+Q1.what do you know about functions?
+A1. 1.⁠ ⁠It is reusable block of code.
+    2.⁠ ⁠Used for performing a particular task.
+    3. Function can be in-built(readymade) functions or programmer defined function.
+    4.⁠ ⁠We define a function. Function have zero or more parameters
+    5.⁠ ⁠Parameters are specified within parantheses after the function name.
+    6. A return statement stop execution of the function body and return value back at the calling point.
+    7.⁠ ⁠Functions : function expression, arrow function, callback function.
+
+Q2.what is layout?
+A2. 1. Layout is pre planned structure of a webpage.
+    2. layout of a web page in real world resembles plan of a flat.
+    3. like we define the structure/layout of a flat(e.g. area given to kitchen,room,balcony etc.) same way we define the structure/layout of web page(area given to div,section,article etc.).
+
+Q3.what do you know about flex layout?
+A3. 1. Flex-box technique is a convenient way for designing layout of a web page having several boxes.
+    2. The parent tag in which flex properties are defined is known as Flex Container or Flex Controller.
+
+Q4.what is the need of grid layout?
+A4. 1. Grid Layout is used to arrange elements in rows and columns.
+    2. It makes it much easier to build web page layouts.
+    3. Without Grid, arranging sections is more complicated. With Grid, we can place each section exactly where we want.
+
+Q5.what is the use of GitHub?
+A5. 1. GitHub is a platform used to store, manage, and collaborate on code.
+    2. Save projects online in repositories.
+    3. We can Access code from anywhere.

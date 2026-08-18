@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Dhruv Pathak">
+    <title>Flex Box</title>
+
+    <style>
+        @import url("https://fonts.google.com/specimen/Roboto+Condensed");
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            min-height:100dvh;
+            display:flex;
+            flex-direction:column;
+            font-family:"Courgette",sans-serif;
+            color:white;
+        }
+
+        section{
+            padding:10px;
+        }
+
+        .box{
+            background-color:lightblue;
+            color:black;
+            padding:1rem;
+        }
+
+        .header{
+            height:10vh;
+        }
+
+        .gc{
+            flex:1;
+            background:white;
+            display:grid;
+            gap:0.5rem;
+            grid-template-columns:150px 250px;
+            grid-template-rows:repeat(3,150px);
+            place-content:center;
+        }
+
+        .footer{
+            height:10vh;
+        }
+
+        @media (min-width:1024px){
+
+            .gc{
+                grid-template-columns:repeat(4,1fr);
+                grid-template-rows:repeat(2,200px);
+            }
+
+            #m6{
+                grid-column:2 / -1;
+            }
+
+        }
+
+
+      
+
+    </style>
+</head>
+
+<body>
+
+    <section class="box header">
+        <span style="font-size:1.5rem;">Header/Navbar</span>
+    </section>
+
+    <section class="box gc">
+        <main class="box" id="m1">Content 1</main>
+        <main class="box" id="m2">Content 2</main>
+        <main class="box" id="m3">Content 3</main>
+        <main class="box" id="m4">Content 4</main>
+        <main class="box" id="m5">Content 5</main>
+        <main class="box" id="m6">Content 6</main>
+    </section>
+
+    <section class="box footer">
+        Footer
+    </section>
+
+</body>
+</html>
